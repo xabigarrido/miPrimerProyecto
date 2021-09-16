@@ -4,6 +4,8 @@ var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefau
 
 var _app = _interopRequireDefault(require("./app"));
 
-_app["default"].listen(3000, function () {
-  console.log('Server on port 3000');
+_app["default"].set('port', process.env.PORT || 3000);
+
+_app["default"].listen(_app["default"].get('port'), function () {
+  console.log('Server on port ' + _app["default"].get('port'));
 });

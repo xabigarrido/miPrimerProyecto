@@ -7,6 +7,8 @@ ruta.get("/tasks/:id", getTask)
 ruta.post("/tasks", addTask)
 ruta.delete("/tasks/:id", deleteTask)
 ruta.put("/tasks/:id", updateTask)
-
+ruta.get("/", (req, res)=>{
+    res.send("Hola mundo")
+})
 
 export default ruta;

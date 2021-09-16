@@ -15,5 +15,8 @@ ruta.get("/tasks/:id", _task.getTask);
 ruta.post("/tasks", _task.addTask);
 ruta["delete"]("/tasks/:id", _task.deleteTask);
 ruta.put("/tasks/:id", _task.updateTask);
+ruta.get("/", function (req, res) {
+  res.send("Hola mundo");
+});
 var _default = ruta;
 exports["default"] = _default;

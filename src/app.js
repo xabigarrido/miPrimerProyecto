@@ -9,5 +9,5 @@ app.use(express.json());
 app.use(morgan("dev"));
 app.use(cors());
 app.use(TaskRoutes)
-
+console.log('Prueba git')
 export default app;
